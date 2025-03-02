@@ -3,7 +3,7 @@ body {
     margin: 20px;
     padding: 20px;
     background-color: lightblue;
-    background-image: url('background.jpg'); /* Đặt tên file ảnh nền */
+    background-image: url('./background.jpg'); /* Đặt tên file ảnh nền */
     background-size: cover; /* Ảnh sẽ phủ toàn bộ màn hình */
     background-position: center;
     background-repeat: no-repeat;
