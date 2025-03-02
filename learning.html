@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Learning</title>
+</head>
+<body>
+    <h1>For Learning</h1>
+    <p>Theo dõi các chứng chỉ của tôi:</p>
+    <ul>
+        <li>CFA Level 2: <span id="cfa_countdown"></span></li>
+        <li>IELTS: <span id="ielts_countdown"></span></li>
+        <li>HSK 3: <span id="hsk_countdown"></span></li>
+    </ul>
+    <script>
+        function countdown(targetDate, elementId) {
+            let target = new Date(targetDate).getTime();
+            let now = new Date().getTime();
+            let daysLeft = Math.ceil((target - now) / (1000 * 60 * 60 * 24));
+            document.getElementById(elementId).innerText = daysLeft + " ngày";
+        }
+        countdown("2025-08-27", "cfa_countdown");  // CFA Level 2
+        countdown("2025-06-01", "ielts_countdown"); // IELTS
+        countdown("2025-04-01", "hsk_countdown");   // HSK 3
+    </script>
+</body>
+</html>
